@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Crawler.Crawl" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAACAAABAEAAACAAAAQAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Crawl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.SaveDataStructures" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataStructures\SaveDataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.Data" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>DataStructures\SaveDataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.SavingHashSet" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>DataStructures\SavingHashSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.SavingQueue" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAEAACAAQAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataStructures\SavingQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.HtmlDownloader" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Html\HtmlDownloader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.HtmlParser" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Html\HtmlParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.HtmlSaver" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Html\HtmlSaver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.SiteInfo" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA=</HashCode>
+      <FileName>Html\HtmlSaver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.ValidateUrl" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Html\ValidateUrl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.Print" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Print.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawler.Program" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

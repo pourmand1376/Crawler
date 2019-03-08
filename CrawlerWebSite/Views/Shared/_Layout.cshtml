@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/CommonCss")
+    @RenderSection("styles",false)
+</head>
+<body class="white-bg">
+    <div dir="rtl" class="container">
+        <div class="row">
+            <header>
+                @Html.Partial("_Header")
+            </header>
+        </div>
+        <div class="row">
+            @RenderBody()
+        </div>
+        <div class="row">
+            <footer>
+                @Html.Partial("_Footer")
+            </footer>
+        </div>
+    </div>
+@Scripts.Render("~/CommonJs")
+@RenderSection("scripts",false)
+</body>
+</html>

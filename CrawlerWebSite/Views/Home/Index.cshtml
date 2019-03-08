@@ -1,0 +1,102 @@
+﻿@model CrawlerWebSite.ModelView.SearchIndexViewModel
+@using CrawlerWebSite.Models
+@{
+    ViewBag.Title = "جستجوگر";
+}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div>
+        <div class="col-lg-12">
+            <div class="ibox-content">
+                <h3 class="pull-right">
+                    <span class="fa fa-bullseye"></span>
+                    به موتور جستجوگر من خوش آمدید.
+                </h3>
+                <div class="pull-left">
+                    خروج از سیستم
+                    <span class="fa fa-home"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-content float-e-margins">
+
+                @if (ViewBag.Search ?? false)
+                {
+                    <h4>
+                     تعداد نتیجه  در مورد عبارت <span class="text-navy">« @Model.Expression »</span>:  @ViewBag.SearchCount 
+                    </h4>
+                    <small>زمان پاسخ @ViewBag.ElapsedTime میلی ثانیه</small>
+                    <small>، </small>
+                    <small>صفحه @(Model.PageNo+1) از @Model.PageCount</small>
+                }
+                else
+                {
+                    <h4>
+                        لطفا متن خود را وارد نمایید.
+                    </h4>
+                }
+                <div class="search-form">
+                    
+                    @using (Html.BeginForm("Search", "Home", FormMethod.Post))
+                    {
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="input-group">
+                                    @Html.ValidationMessageFor(t=>Model.Expression)
+                                    @Html.TextBoxFor(m=>Model.Expression,new {@class="form-control",placeholder="متن جستجو"})
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="submit">
+                                            بگرد
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                @if (Model?.SearchResults != null)
+                {
+                    foreach (SearchResult search in Model?.SearchResults)
+                     {
+                         <div class="hr-line-dashed"></div>
+                         <div class="search-result">
+                             <h3><a href="@search.Url">@search.Title</a></h3>
+                             <a href="@search.Url" class="search-link">@search.Url</a>
+                             <p> @search.Description</p>
+                         </div>
+                     }
+                }
+                
+                <div class="hr-line-dashed"></div>
+                <div class="text-center">
+                    <div class="btn-group">
+                        @if (ViewBag.Search ?? false)
+                        {
+                            <button class="btn btn-white @(Model.PageNo == 0 ? "disabled" : "")" type="button">
+                            
+                                <a href="/Home/PageNo?id=@(Model.PageNo)">قبلی</a>
+                            </button>
+                            
+                            for (int i = Model.PageNo+1; i < Model.PageCount && i<Model.PageNo+20; i++)
+                            {
+                                
+                                <button class="btn btn-white">
+                                    <a href="/Home/PageNo?id=@(i)">@(i)</a>
+                                </button>
+                            }
+                            <button class="btn btn-white @(Model.PageNo==Model.PageCount?"disabled":"")" 
+                                    type="button"><a href="/Home/PageNo?id=@(Model.PageNo+2)">بعدی</a> </button>
+                            
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
