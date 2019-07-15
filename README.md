@@ -1,10 +1,14 @@
 # Crawler
 Simple Crawler and Indexer and Search Engine Web Application
 
-# Nuget Restore
-Just open the project and right click the solution and choose nuget package restore. Wait till package restores. 
+## Nuget Restore
+Just open the project and right click the solution and choose **nuget** package restore. Wait till package restore completes. 
 
-# Configuration
-1. Build and run the first project called Crawler. It uses its seed and downlaods the sites recursively (Breath First Search) and stores it in Data.Db and Crawler.Db file. Whenever you feel the gathered data is enough, simply close the program. 
+## Configuration
+1. Build and run the first project called Crawler. It uses its seed and downlaods the sites recursively (_Breath First Search_) and stores it in ***Data.Db*** and ***Crawler.Db*** file. Whenever you feel the gathered data is enough, simply close the program.  
 
-2. Build and run the second project called Indexer. You should copy the downloaded files from previous section here. Then after you run the program, It generates another file 
+2. Build and run the second project called Indexer. You should copy ***Crawler.Db*** file from previous section here. After opening the program, It starts indexing the downloaded data and generates three files ***Sites.Db***, ***TitleIndex.Db***, and ***BodyIndex.Db***.
+
+3. Copy files generated from previous section to **App_Data** folder. 
+
+Enjoy. 
