@@ -1,6 +1,6 @@
 # Crawler
 Simple Crawler and Indexer and Search Engine Web Application
-[https://img.shields.io/github/license/pourmand1376/Crawler.svg]
+![release](https://img.shields.io/github/license/pourmand1376/Crawler.svg)
 
 ## Nuget Restore
 Just open the project and right click the solution and choose **nuget** package restore. Wait till package restore completes. 
