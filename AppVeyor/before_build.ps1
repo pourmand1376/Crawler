@@ -1,1 +1,1 @@
-nuget restore ShareX.sln
+nuget restore Crawler.sln
