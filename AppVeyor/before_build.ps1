@@ -1,0 +1,1 @@
+nuget restore ShareX.sln
