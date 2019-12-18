@@ -1,6 +1,7 @@
 # Crawler
 Simple Crawler and Indexer and Search Engine Web Application
 ![](https://github.com/pourmand1376/Crawler/blob/master/Demo/Demo1.gif)
+![](https://github.com/pourmand1376/Crawler/blob/master/Demo/Demo2.gif)
 
 
 ![release](https://img.shields.io/github/license/pourmand1376/Crawler.svg)
